@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [
+	'as'=>'home',
+	'uses'=>'StoreController@index']);
+Route::get('librooo/{id_libro}',[
+		'as'=>'libro-deta',
+	'uses' =>'StoreController@show']);
