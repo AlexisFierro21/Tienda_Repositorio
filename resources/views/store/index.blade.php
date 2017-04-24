@@ -1,9 +1,9 @@
 @extends('store.template')
 @section('content')
 <div class="container text-center">
-	<div id="libros">
+	<section id="libros">
 		@foreach($libros as $libro)
-			<div class="libro white-panel">
+			<article class="white-panel">
 			<h3>{{$libro->titulo}}</h3><hr>
 			<img src="{{ $libro->image }}" width="150">
 				<div class="libro-info panel">
@@ -16,9 +16,9 @@
 				</p>
 
 				</div>
-			</div>
+			</article>
 @endforeach
-	</div>
+	</section>
 </div>
 
 @stop

@@ -10,7 +10,7 @@
       <a class="navbar-brand main-title" href="{{route('home')}}">PDF Express</a>
     </div>
 
-    <div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2" aria-expanded="true">
           <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Buscar" size="100">
@@ -18,7 +18,7 @@
         <button type="submit" class="btn btn-default">Buscar</button>
       </form>
       <ul class="nav navbar-nav navbar-default">
-        <li class="dropdown">
+        <li class="dropdown open">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-2x"></i><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#">Iniciar Sesion</a></li>
