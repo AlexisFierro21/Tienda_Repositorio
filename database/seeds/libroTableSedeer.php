@@ -12,11 +12,12 @@ class libroTableSedeer extends Seeder
      */
     public function run()
     {   
+;
         $data = array(
             [
             'titulo'=>'El arte de la guerra',
             'autor'=>'Tzun tzu',
-            'image'=>'img/arte.jpg',
+            'image'=>'arte.jpg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -25,7 +26,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/esco.jpeg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -35,7 +36,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/poder.jpg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -45,7 +46,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/arte.jpg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -55,7 +56,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/esco.jpeg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -65,7 +66,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/poder.jpg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -75,7 +76,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/esco.jpeg',
+            'image'=>'http:localhost/Tienda/public/img/esco.jpeg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
@@ -85,7 +86,7 @@ class libroTableSedeer extends Seeder
 
             'titulo'=>'48 leyes del poder',
             'autor'=>'Tse tse',
-            'image'=>'img/poder.jpg',
+            'image'=>'http:localhost/Tienda/public/img/poder.jpg',
             'genero'=>'Cultura',
             'precio'=>'102',
             'reseña'=>'Es un libro escrito por el mitico chino de las putas guerra tzun tzu'
