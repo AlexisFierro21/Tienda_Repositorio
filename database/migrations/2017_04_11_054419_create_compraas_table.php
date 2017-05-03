@@ -15,15 +15,15 @@ class CreateCompraasTable extends Migration
     {
         Schema::enableForeignKeyConstraints();
         Schema::create('compraas', function (Blueprint $table) {
-            $table->increments('id_compra');
+            $table->increments('id');
             $table->decimal('precio',5,2);
             $table->date('fecha');
-            $table->integer('fk_libro')->unsigned();//Para generar las relaciones de las llaves foraneas
-            $table->foreign('fk_libro')->references('id_libro')->on('librooos')->onDelete('cascade');
-            $table->integer('fk_editorial')->unsigned();
-            $table->foreign('fk_editorial')->references('id_editorial')->on('editoriaals')->onDelete('cascade');
-            $table->integer('fk_usuario')->unsigned();
-            $table->foreign('fk_usuario')->references('id')->on('usuarios')->onDelete('cascade');
+            $table->integer('id_libro')->unsigned();//Para generar las relaciones de las llaves foraneas
+            $table->foreign('id_libro')->references('id')->on('librooos')->onDelete('cascade');
+            $table->integer('id_editorial')->unsigned();
+            $table->foreign('id_editorial')->references('id')->on('editoriaals')->onDelete('cascade');
+            $table->integer('id_usuario')->unsigned();
+            $table->foreign('id_usuario')->references('id')->on('usuarios')->onDelete('cascade');
             $table->timestamps();
         });
 

@@ -14,7 +14,7 @@ class CreateLibrooosTable extends Migration
     public function up()
     {
         Schema::create('librooos', function (Blueprint $table) {
-            $table->increments('id_libro');
+            $table->increments('id');
             $table->string('titulo',255);
             $table->string('autor',255);
             $table->string('image',255);

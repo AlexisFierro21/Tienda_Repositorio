@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Librooo;
 use App\subioo;
 use App\Editoriaal;
+use App\editoriaal_librooo;
 class CartController extends Controller
 {
 	public function __construct()
@@ -30,16 +31,26 @@ public function show()
 public function add(Librooo $libro)
 {
 	$cart = \Session::get('cart');
-	//$cantidad= $cantidad+1;
-	$cart[$libro->id_libro]=$libro;
+	$res=\DB::table('editoriaal_librooo')
+	->join('librooos','librooo_id','=','librooos.id')
+	->join('Editoriaals','editoriaal_id','=','editoriaals.id')
+	->select('librooos.*','editoriaals.nombre')
+	->where('librooos.id',$libro->id)
+	->get();
+
+	//where('fk_libro',$libro->id_libro)->first();
+	$cart[$libro->id]=$res[0];
 	\Session::put('cart',$cart);
+	//dd($cart);	# code...
+	
+	//dd($carr);
 	return redirect()->route('home');
 }
 
     //delete item
 public function delete(Librooo $libro){
 	$cart =\Session::get('cart');
-	unset($cart[$libro->id_libro]);
+	unset($cart[$libro->id]);
 	\Session::put('cart',$cart);
 	return redirect()->route('cart-show');
 }

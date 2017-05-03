@@ -22,10 +22,10 @@
 		<tr>
 		<td>{{$item->titulo}}</td>
 		<td>{{$item->autor}}</td>
-		<td>{{$item->editorial}}</td>
+		<td>{{$item->nombre}}</td>
 		<td>${{number_format($item->precio,2)}}</td>
 		<td>
-			<a href="{{route('cart-delete',$item->id_libro)}}" class="btn btn-danger">
+			<a href="{{route('cart-delete',$item->id)}}" class="btn btn-danger">
 				<i class="fa fa-remove"></i>
 			</a>
 		</td>

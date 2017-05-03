@@ -14,7 +14,7 @@ class CreateEditoriaalsTable extends Migration
     public function up()
     {
         Schema::create('editoriaals', function (Blueprint $table) {
-            $table->increments('id_editorial');
+            $table->increments('id');
             $table->string('nombre',255);
             $table->string('rfc',255);
             $table->string('code',5);

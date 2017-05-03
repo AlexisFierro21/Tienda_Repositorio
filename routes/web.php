@@ -11,12 +11,12 @@
 |
 */
  Route::bind('librooo',function($id){
- 	return App\Librooo::where('id_libro',$id)->first();
+ 	return App\Librooo::where('id',$id)->first();
  });
 Route::get('/', [
 	'as'=>'home',
 	'uses'=>'StoreController@index']);
-Route::get('librooo/{id_libro}',[
+Route::get('librooo/{id}',[
 		'as'=>'libro-deta',
 	'uses' =>'StoreController@show']);
 //Carrito-------------

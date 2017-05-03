@@ -17,7 +17,7 @@ class StoreController extends Controller
     }
     //Se ejecutara el metodo show para mostrar en otra pagina el libro seleccionado
     public function show($id){
-        $resultado=librooo::where('id_libro',$id)->first();
+        $resultado=librooo::where('id',$id)->first();
         //dd($resultado);
             $cart=\Session::get('cart');
     $cantidad=0;
